@@ -1,0 +1,11 @@
+name: testing workflow
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v4
+      - name: "print .git/config"
+        run: cat .git/config
