@@ -9,3 +9,7 @@ jobs:
         uses: actions/Checkout@v4
       - name: "print .git/config"
         run: cat .git/config
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: .git/config
